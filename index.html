@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pugalendran Mohan Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="pm.png" class="logo">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                     <li><a href="#">Skills</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p><span>PCB</span> designer</p>
+                <h1>Hi,I'm<span> Pugalendran</span></h1>
+            </div>
+        </div> 
+    </div>
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-c1">
+                    <img src="pugal.png" class="pugal">
+                </div>
+                <div class="about-c2">
+                    <h1 class="sub-title">About me</h1>
+                    <p class="sub">I am a motivated and detail-oriented <span style="color: #ff004f;"><u><b>Electronics and Communication</u></b></span> enthusiast with a strong foundation in embedded systems, 
+                    IoT and programming.I have hands-on experience working on practical projects that integrate hardware and software to solve real world  I
+                    am eager to contribute my skills,continuously learn,and grow in a challenging and innovative environment.</p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Skills, Projects, and Contact sections to paste after the About section -->
+
+<!-- Skills Section -->
+<section id="skills">
+  <div class="container">
+    <h2 class="section-title">Skills</h2>
+    <div class="skills-grid">
+      <div class="skill">
+        <h3>Hardware</h3>
+        <ul>
+          <li>PCB Design (KiCad, ORCAD)</li>
+          <li>Microcontrollers: Arduino, Raspberry Pi Pico</li>
+          <li>Sensors & Interfacing (Gas sensors, LoRa, GPS)</li>
+        </ul>
+      </div>
+      <div class="skill">
+        <h3>Software</h3>
+        <ul>
+          <li>C / Embedded C</li>
+          <li>Java</li>
+          <li>SQL   </li>
+        </ul>
+      </div>
+      <div class="skill">
+        <h3>Tools & Others</h3>
+        <ul>
+          <li>Git & GitHub</li>
+          <li>PCB layout & fabrication workflow</li>
+          <li>Familiar with IoT platforms and basic cloud integration</li>
+          
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Projects Section -->
+<section id="projects">
+  <div class="container">
+    <h2 class="section-title">Projects</h2>
+    <div class="projects-grid">
+      <!-- Project 1 -->
+      <div class="project-card">
+        <img src="P1.png" alt="LED Memory Game" class="project-thumb">
+        <div class="project-content">
+          <h3>LED Memory Game</h3>
+          <p>Built using Arduino UNO and LEDs. Game trains memory by showing sequences the player repeats. Includes score display and buzzer feedback.</p>
+          <p class="proj-tech">Tech: Arduino, C, 8-bit logic</p>
+          <a href="https://github.com/Pugal-04/LED_MEMORY_GAME" class="btn">View Repo</a>
+        </div>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="project-card">
+        <img src="P2.png" alt="Smart Traffic Light" class="project-thumb">
+        <div class="project-content">
+          <h3>Smart Traffic Light for Ambulance (LoRa)</h3>
+          <p>Simulates priority control for ambulances using LoRa to communicate with traffic lights. Uses Raspberry Pi Pico and LoRa modules.</p>
+          <p class="proj-tech">Tech: Pico, LoRa, Python,Ardunino,C</p>
+          <a href="https://github.com/Pugal-04/Smart-Traffic-Light-LoRa" class="btn">View Demo</a>
+        </div>
+      </div>
+
+      <!-- Project 3 -->
+      <div class="project-card">
+        <img src="P3.png" alt="Smart Footwear" class="project-thumb">
+        <div class="project-content">
+          <h3>Smart IoT Safety Footwear</h3>
+          <p>Wearable prototype for emergency alerts with GPS, GSM and buzzer. Designed for safety and quick alerting to pre-set contacts.</p>
+          <p class="proj-tech">Tech: GPS, GSM, Microcontroller</p>
+          <a href="https://github.com/Pugal-04/Smart_FootWear" class="btn">Read Paper</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact">
+  <div class="container">
+    <h2 class="section-title">Contact</h2>
+    <div class="contact-row">
+      <div class="contact-info">
+        <h3>Get in touch</h3>
+        <p>If you'd like to collaborate or have any questions, feel free to reach out.</p>
+        <ul class="contact-list">
+          <li><strong>Email:</strong> <a href="mailto:pugalendranm3@gmail.com">mail Me</a></li>
+          <li><strong>LinkedIn:</strong> <a href="https://in.linkedin.com/in/pugalendran-mohan-641614274">Your LinkedIn</a></li>
+          <li><strong>GitHub:</strong> <a href="https://github.com/Pugal-04">Your GitHub</a></li>
+        </ul>
+      </div>
+
+      <div class="contact-form">
+        <form action="mailto:pugalendranm3@gmail.com" method="post" enctype="text/plain">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required>
+
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required>
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+
+          <button type="submit" class="btn">Send</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Optional small footer -->
+<footer id="footer">
+  <div class="container">
+    <p>&copy; <span id="year"></span> Pugalendran Mohan. All rights reserved.</p>
+  </div>
+</footer>
+
+<!-- Small script to set year -->
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
